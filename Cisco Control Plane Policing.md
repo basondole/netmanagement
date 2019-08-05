@@ -19,37 +19,37 @@ In summary:
 ## Configuration Sample
 
 ### Constructing the CoPP Policy  
-The policy will be used do administer the below components  
+Identify what we want to control 
 - Allow trusted sources  
-><em>This is for all the trusted IPs that are allowed total control to the device</em>
+	- This is for all the trusted IPs that are allowed total control to the device</em>
 - Remote access control  
-><em>This is for what is allowed to access thee vty lines</em>  
+	- This is for what is allowed to access thee vty lines</em>  
 - BGP control  
-><em>This is for what is allowed to form BGP sessions with the device</em>
+	- This is for what is allowed to form BGP sessions with the device</em>
 - SNMP control  
-><em>This is for what can perform SNMP operations on the device</em>
+	- This is for what can perform SNMP operations on the device</em>
 - ICMP rate limiting
-><em>This is to limit the ICMP traffic destined to the device</em>
+	- This is to limit the ICMP traffic destined to the device</em>
 - BFD control
-><em>This specifies what is allowed to form BFD neighborship with the device</em>
+	- This specifies what is allowed to form BFD neighborship with the device</em>
 - LDP control
-><em>This specifies what is allowed to form LDP session with the device</em>
+	- This specifies what is allowed to form LDP session with the device</em>
 - DNS control
-><em>This specifies what is allowed to send DNS requests to/from the device</em>
+	- This specifies what is allowed to send DNS requests to/from the device</em>
 - RIP control
-><em>This specifies what is allowed to run RIP with the device</em>
+	- This specifies what is allowed to run RIP with the device</em>
 - OSPF control
-><em>This specifies what is allowed to run OSPF with the device</em>
+	- This specifies what is allowed to run OSPF with the device</em>
 - NTP control
-><em>This specifies what is allowed to be used for NTP</em>
+	- This specifies what is allowed to be used for NTP</em>
 - GRE control
-><em>This specifies what is allowed to form GRE tunnels with the device</em>
+	- This specifies what is allowed to form GRE tunnels with the device</em>
 - PIM control
-><em>This specifies what is allowed to run PIM with the device</em>
+	- This specifies what is allowed to run PIM with the device</em>
 - IGMP control
-><em>This specifies what is allowed to run IGMP with the device</em>
+	- This specifies what is allowed to run IGMP with the device</em>
 - Explicit block
-><em>This block everything else that is did not match the above and may not be required depending on your design</em>
+	- This block everything else that is did not match the above and may not be required depending on your design</em>
 
 
 
