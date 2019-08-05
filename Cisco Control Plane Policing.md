@@ -1,5 +1,5 @@
 # Control Plane policing
-Control plane policing is used to control traffic destined to the control plane of the router. This reduces strain on our routers routing engine by limiting the management traffic destined for the router.
+Control plane policing is used to control traffic destined to the control plane of the router. This reduces strain on our routers CPU by controlling the traffic destined for the router itself.
 
 ## Configuring Control Plane Policing on Cisco IOS
 Configuration of the control plane policing takes a modular approach as described below
