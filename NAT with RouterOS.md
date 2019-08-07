@@ -22,31 +22,36 @@ Below command does the same thing the first does only using an interface list in
 You can also use a specific WAN IP to do NAT with instead of using interface address
 
 **Command:**  
-<pre>/ip firewall nat
-add chain=srcnat src-address=<LAN_BLOCK> action=src-nat to-addresses=<PUBLIC_IP> out-interface=<WAN_INTERFACE></pre>
+```
+/ip firewall nat
+add chain=srcnat src-address=<LAN_BLOCK> action=src-nat to-addresses=<PUBLIC_IP> out-interface=<WAN_INTERFACE>
+```
 
 Or use an interface list  
-**Command:** <pre>/ip firewall nat
-add chain=srcnat src-address=<LAN_BLOCK> action=src-nat to-addresses=<PUBLIC_IP> out-interface-list=<WAN_INTERFACE_LIST></pre>
+**Command:** 
+```
+/ip firewall nat
+add chain=srcnat src-address=<LAN_BLOCK> action=src-nat to-addresses=<PUBLIC_IP> out-interface-list=<WAN_INTERFACE_LIST>
+```
 
 This will change the source IP address and port of the packets from LAN_BLOCK to the IP address PUBLIC_IP
 
 
 
 ## Port Forwarding WAN to LAN
-Below WAN port 5901 is forwarded to LAN ip 192.168.3.100
+Below WAN port 5901 is forwarded to LAN IP address 192.168.3.100
 **Command:**
-<pre>
+```
 /ip firewall nat
 add chain=dstnat protocol=tcp dst-address=<PUBLIC_IP> dst-port=5901 action=dst-nat to-addresses=192.168.3.100
-</pre>
+```
 
 Below WAN port 5901 is forwarded to LAN ip 192.168.3.100 port 80  
 **Command:**
-<pre>
+```
 /ip firewall nat
 add chain=dstnat protocol=tcp dst-port=5901 action=dst-nat to-addresses=192.168.3.100 to-ports=80
-</pre>
+```
 This means when an incoming connection requests TCP port 5901 use the DST-NAT action and redirect it to local address 192.168.3.100 and the port 80
 
 
