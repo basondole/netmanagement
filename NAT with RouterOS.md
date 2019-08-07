@@ -39,7 +39,7 @@ This will change the source IP address and port of the packets from LAN_BLOCK to
 
 
 ## Port Forwarding WAN to LAN
-Below WAN port 5901 is forwarded to LAN IP address 192.168.3.100
+Below WAN port 5901 is forwarded to LAN IP address 192.168.3.100  
 **Command:**
 ```
 /ip firewall nat
