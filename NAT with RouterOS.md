@@ -1,4 +1,6 @@
 # NAT Rules for MikroTik routers
+This guide covers different NAT cases for the RouterOS.
+> RouterOS is the softwares that powers MikroTik devices
 
 ## NAT for Internet access
 
