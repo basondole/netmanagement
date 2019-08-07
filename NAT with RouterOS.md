@@ -48,6 +48,7 @@ add chain=dstnat protocol=tcp dst-port=5901 action=dst-nat to-addresses=192.168.
 This means when an incoming connection requests TCP port 5901 use the DST-NAT action and redirect it to local address 192.168.3.100 and the port 80
 
 
+## Mapping
 ### One to One Mapping: IP to IP
 **Command:**
 ```
@@ -65,5 +66,5 @@ This means when an incoming connection requests TCP port 5901 use the DST-NAT ac
 ## Port Translation
 Below incoming port 2222 is translated to 22
 
-**Command:**
+**Command:**  
 `/ip firewall nat add action=dst-nat chain=dstnat dst-address=<PUBLIC_IP> dst-port=2222 protocol=tcp to-ports=22`
